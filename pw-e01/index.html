@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Jonathan</title>
+</head>
+<body>
+
+    <br><br><br>
+    <div class="container border p-5">
+        <!-- 
+            * row: Cada fila tendrá la etiqueta asociada y el control donde se ingresarán los datos.
+            * form-group: Maneja el espacio entre cada elemento (etiquetas y controles, por ejemplo).
+        -->
+        <div class="row form-group">
+            <!-- 
+              * col-md-2: Se consideran 2 columnas para la etiqueta (y por lo tanto 10 columnas para el control)
+              * col-form-label: Permite alinear la etiqueta al control, centrándola verticalmente (pruebe eliminándolo)
+            -->
+            <label class="col-md-2 col-form-label" for="inputName">Número de tarjeta</label>
+            <div class="col-sm-10">
+                <!-- form-control permite estilizar la visualización de los controles (pruebe quitando esta clase) -->
+                <input type="tel" class="form-control" id="inputName">
+            </div>          
+        </div>
+        
+        
+        <!--
+          * mt-5: Manejaremos cada fila con un margen sueperior (margin-top).
+        -->
+        <div class="row form-group mt-5">        
+          <label class="col-md-2 col-form-label" for="inputSurname">Nombre de titular</label>
+          <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputSurname">
+          </div>          
+        </div>
+
+        <div class="row form-group mt-5">        
+          <label class="col-md-2 col-form-label" for="inputCity">Mes de expiración</label>
+          <div class="col-sm-2">
+            <!-- Permite manejar la lista de opciones para los destinos. Otra opción: Autocompletar con Datalists (Bootstrap)-->
+            <input type="month" class="col-md-8 form-control" id="inputTravelDate">
+
+          </div>    
+        </div>
+
+        <div class="row form-group mt-5">        
+            <label class="col-md-2 col-form-label" for="inputCity">Mes de expiración</label>
+            <div class="col-sm-2">
+              <!-- Permite manejar la lista de opciones para los destinos. Otra opción: Autocompletar con Datalists (Bootstrap)-->
+              <input type="date" class="col-md-8 form-control" id="inputTravelDate">
+  
+            </div>    
+          </div>
+   
+        
+        <!-- El control permite el ingreso de una fecha, de forma amigable -->
+        <div class="row form-group mt-5">
+          <label class="col-md-2 col-form-label" for="inputTravelDate">CVC</label>
+          <div class="col-sm-2">
+              <input type="tel" class="col-md-8 form-control" id="inputTravelDate">
+              <a href="info.html">info</a>
+          </div>
+         
+        </div>
+
+        <!-- El control permite subir un archivo -->
+        
+        <!--
+          * col-md-6: El botón ocupará 6 columnas en el layout de la página.
+          * mx-auto: Permite alinear el botón horizontalmente.
+        -->
+        <div class="row mt-5 col-md-6 mx-auto inline1">
+          <button class="btn btn-primary">Aceptar</button>
+        </div>
+        <div class="row mt-5 col-md-6 mx-auto inline1">
+            <button class="btn btn-primary">Cancelar</button>
+          </div>
+
+</body>
+</html>
